@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- favicon -->
+		<link rel="shortcut icon" href="assets/images/favicon.png">
+		<link rel="apple-touch-icon" href="assets/images/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+		<title>Yash</title>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+		<!-- styles -->
+		<link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="preloader cursor-anim-enable dark-nav">
+		<!-- preloader-loading start -->
+		<div class="preloader__logoload-box">
+			<img class="preloader__logo vertical" src="assets/images/logo/logo-white-vertical.png" alt="logo">
+			<div class="preloader__pulse"></div>
+		</div><!-- preloader-loading end -->
+
+		<!-- pointer start -->
+		<div class="pointer js-pointer" id="js-pointer">
+			<i class="pointer__inner fas fa-long-arrow-alt-right"></i>
+			<i class="pointer__inner fas fa-search"></i>
+			<i class="pointer__inner fas fa-link"></i>
+		</div><!-- pointer end -->
+
+		<!-- to top btn start -->
+		<a href="#up" class="scroll-to-btn js-headroom js-midnight-color js-smooth-scroll js-pointer-large">
+			<span class="scroll-to-btn__box">
+				<span class="scroll-to-btn__arrow"></span>
+			</span>
+		</a><!-- to top btn end -->
+
+		<!-- scroll down btn start -->
+		<a href="#down" class="scroll-to-btn to-down js-headroom js-midnight-color js-smooth-scroll js-pointer-large js-scroll-btn">
+			<span class="scroll-to-btn__box">
+				<span class="scroll-to-btn__arrow"></span>
+			</span>
+		</a><!-- scroll down btn end -->
+
+		<!-- header start -->
+		<header class="fixed-header">
+			<!-- logo start -->
+			<div class="header-logo vertical js-midnight-color js-headroom">
+				<div class="hidden-box">
+					<a href="index.html" class="header-logo__box js-pointer-large js-animsition-link">
+						<img class="header-logo__img white" src="assets/images/logo/logo-white-vertical.png" alt="logo">
+						<img class="header-logo__img black" src="assets/images/logo/logo-black-vertical.png" alt="logo">
+					</a>
+				</div>
+			</div><!-- logo end -->
+
+			<!-- menu-icon start -->
+			<div class="menu-icon vertical js-menu-open-close js-pointer-large js-midnight-color js-headroom">
+				<div class="menu-icon__box">
+					<span class="menu-icon__inner"></span>
+					<span class="menu-icon__close"></span>
+				</div>
+			</div><!-- menu-icon end -->
+
+			<!-- header-contact start -->
+			<div class="header-contact js-midnight-color js-headroom">
+				<div class="header-contact__flex">
+					<div class="header-contact__anim">
+						<a href="contact.html" class="header-contact__btn vertical-text center js-pointer-large">
+							<span class="vertical-text__inner"><i class="far fa-comment-dots"></i> Get in touch</span>
+						</a>
+					</div>
+				</div>
+			</div><!-- header-contact end -->
+
+			<!-- header-social start -->
+			<div class="header-social after-preloader-anim js-midnight-color js-headroom">
+				<ul class="list list_center list_margin-20px hidden-box">
+					<li class="list__item">
+						<div class="hidden-box d-inline-block">
+							<a href="https://github.com/syash5" class="anim-slide js-pointer-small">
+								<i class="fab fa-github"></i>
+							</a>
+						</div>
+					</li>
+					<li class="list__item">
+						<div class="hidden-box d-inline-block">
+							<a href="#" class="anim-slide tr-delay-02 js-pointer-small">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</div>
+					</li>
+					<li class="list__item">
+						<div class="hidden-box d-inline-block">
+							<a href="#" class="anim-slide tr-delay-04 js-pointer-small">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
+					</li>
+					<li class="list__item">
+						<div class="hidden-box d-inline-block">
+							<a href="#" class="anim-slide tr-delay-06 js-pointer-small">
+								<i class="fab fa-behance"></i>
+							</a>
+						</div>
+					</li>
+					<li class="list__item">
+						<div class="hidden-box d-inline-block">
+							<a href="#" class="anim-slide tr-delay-08 js-pointer-small">
+								<i class="fab fa-dribbble"></i>
+							</a>
+						</div>
+					</li>
+					<li class="list__item">
+						<div class="hidden-box d-inline-block">
+							<a href="#" class="anim-slide tr-delay-10 js-pointer-small">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div><!-- header-social end -->
+		</header><!-- header end -->
+
+		<!-- navigation start -->
+		<nav class="nav-container pos-rel js-dropdown-active-box">
+			<!-- pos-rel start -->
+			<div class="pos-rel height-100perc">
+				<!-- dropdown close btn start -->
+				<div class="dropdown-close">
+					<div class="dropdown-close__inner js-dropdown-close js-pointer-large">
+						<span class="dropdown-close__arrow"></span>
+					</div>
+				</div><!-- dropdown close btn end -->
+
+				<!-- js-nav-slider-bg start -->
+				<div class="js-nav-slider-bg">
+					<!-- swiper-wrapper start -->
+					<div class="swiper-wrapper">
+						<!-- swiper-slide start -->
+						<div class="swiper-slide">
+							<div class="nav-slide-bg" style="background-image:url(assets/images/projects/speakers/revolt-BMest61rcqs-unsplash.jpg)"></div>
+							<div class="bg-overlay-black"></div>
+						</div><!-- swiper-slide end -->
+						<!-- swiper-slide start -->
+						<div class="swiper-slide">
+							<div class="nav-slide-bg" style="background-image:url(assets/images/projects/sneakers/revolt-164_6wVEHfI-unsplash.jpg)"></div>
+							<div class="bg-overlay-black"></div>
+						</div><!-- swiper-slide end -->
+						<!-- swiper-slide start -->
+						<div class="swiper-slide">
+							<div class="nav-slide-bg" style="background-image:url(assets/images/projects/black-bike/josh-nuttall-pIwu5XNvXpk-unsplash.jpg)"></div>
+							<div class="bg-overlay-black"></div>
+						</div><!-- swiper-slide end -->
+						<!-- swiper-slide start -->
+						<div class="swiper-slide">
+							<div class="nav-slide-bg" style="background-image:url(assets/images/projects/pexels/woman-in-black-sexy-top-2825034.jpg)"></div>
+							<div class="bg-overlay-black"></div>
+						</div><!-- swiper-slide end -->
+						<!-- swiper-slide start -->
+						<div class="swiper-slide">
+							<div class="nav-slide-bg" style="background-image:url(assets/images/projects/furniture/goashape-RvyJGaoaWrs-unsplash.jpg)"></div>
+							<div class="bg-overlay-black"></div>
+						</div><!-- swiper-slide end -->
+					</div><!-- swiper-wrapper end -->
+				</div><!-- js-nav-slider-bg end -->
+
+				<!-- menu-box start -->
+				<ul class="menu-box">
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-dropdown-open">
+						<a href="index.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+							<span class="nav-btn__inner" data-text="Home">Home</span>
+						</a>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-dropdown-open">
+						<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
+							<span class="nav-btn__inner" data-text="Navigate">Navigate</span>
+						</a>
+
+						<!-- dropdown start -->
+						<ul class="menu-box dropdown js-dropdown">
+							<li class="nav-btn-box">
+								<a href="index.html#projects" class="nav-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="About us">About us</span>
+								</a>
+							</li>
+							<li class="nav-btn-box">
+								<a href="#hobbies" class="nav-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Who we are">Who we are</span>
+								</a>
+							</li>
+							<li class="nav-btn-box">
+								<a href="pages_what-we-do.html" class="nav-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="What We Do">What We Do</span>
+								</a>
+							</li>
+							<li class="nav-btn-box">
+								<a href="pages_agency.html" class="nav-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Agency">Agency</span>
+								</a>
+							</li>
+							<li class="nav-btn-box">
+								<a href="pages_services.html" class="nav-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Services">Services</span>
+								</a>
+							</li>
+						</ul><!-- dropdown end -->
+					</li><!-- nav-btn-box end -->
+
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box">
+						<a href="contact.html" class="nav-btn large dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Contact">Contact</span>
+						</a>
+					</li><!-- nav-btn-box end -->
+				</ul><!-- menu-box end -->
+
+				<!-- nav-information start -->
+				<div class="nav-information">
+					<!-- nav-email start -->
+					<div>
+						<div class="hidden-box d-inline-block">
+							<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Email</div>
+						</div>
+						<div class="nav-fade-anim js-nav-anim margin-top-10">
+							<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">sharma.yash520@gmail.com</a>
+						</div>
+					</div><!-- nav-email end -->
+
+					<!-- nav-address start -->
+					<div>
+						<div class="hidden-box d-inline-block">
+							<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Address</div>
+						</div>
+						<div class="nav-fade-anim js-nav-anim margin-top-10">
+							<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">
+								New Delhi<br>
+								India
+							</a>
+						</div>
+					</div><!-- nav-address end -->
+
+					<!-- nav-phone start -->
+					<div>
+						<div class="hidden-box d-inline-block">
+							<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Phone</div>
+						</div>
+						<div class="nav-fade-anim js-nav-anim margin-top-10">
+							<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">+91-9818580167</a><br>
+							<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small"></a>
+						</div>
+					</div><!-- nav-phone end -->
+				</div><!-- nav-information end -->
+
+				<!-- nav-copyright start -->
+				<div class="nav-copyright text-right">
+					<p class="copyright-style nav-fade-anim js-nav-anim">
+						&copy; Copyright 2020 Yash></a>
+					</p>
+				</div><!-- nav-copyright end -->
+			</div><!-- pos-rel end -->
+		</nav><!-- navigation end -->
+
+		<!-- main start -->
+		<main class="js-animsition-overlay" data-animsition-overlay="true" id="home">
+			<!-- page head start -->
+			<section id="up" class="pos-rel bg-img-cover" style="background-image:url(assets/images/backgrounds/man-in-black-crew-neck-shirt-wearing-blue-sunglasses-3951774.jpg)">
+				<!-- bg-overlay -->
+				<div class="bg-overlay-black"></div>
+				<!-- pos-rel start -->
+				<div class="pos-rel flex-min-height-100vh">
+					<div class="padding-top-bottom-120 container small">
+						<!-- title start -->
+						<h2 class="headline-l after-preloader-anim">
+							<span class="anim-text-fill" data-text="Hi, i'm">Hi, i'm</span>
+							<span class="anim-text-fill tr-delay-01" data-text="Yash Sharma">Yash Sharma</span><br>
+							<span id="js-typewriter" class="text-color-red"></span><br>
+							<span class="anim-text-fill tr-delay-02" data-text="Based in">Based in</span>
+							<span class="anim-text-fill tr-delay-03" data-text="Delhi.">Delhi.</span>
+						</h2><!-- title end -->
+					</div>
+				</div><!-- pos-rel end -->
+			</section><!-- page head end -->
+
+			<!-- about start -->
+			<section id="down" class="pos-rel section-bg-dark-1" >
+				<!-- pos-rel start -->
+				<div class="pos-rel flex-min-height-100vh" id="about">
+					<!-- width-100perc start -->
+					<div class="width-100perc padding-top-100 padding-bottom-120">
+						<!-- flex-container start -->
+						<div class="container flex-container">
+							<!-- column start -->
+							<div class="four-columns column-100-100 padding-top-20">
+								<div class="column-r-margin-20-999">
+									<h2 class="headline-s anim-text-double-fill js-scrollanim" data-text="About Me">About Me</h2>
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="eight-columns column-100-100 padding-top-20">
+								<div class="column-r-margin-20-999">
+									<p class="body-text-s anim-text-reveal js-scrollanim">A meticulous, diligent person with theoretical knowledge and comprehensive hands-on experience in different technologies. An insatiable hunger for knowledge is what motivates me to learn more and more.</p>
+								</div>
+							</div><!-- column end -->
+							 
+						
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-r-margin-20 js-scrollanim">
+									<h6 class="subhead-xs anim-text-double-fill" data-text="Skills">Skills</h6>
+									<!-- list start -->
+									<ul class="list text-color-b0b0b0 padding-top-20">
+										<li class="list__item red dot hidden-box">
+											<p class="subhead-xxs anim-slide tr-delay-01">Java</p>
+										</li>
+										<li class="list__item red dot hidden-box">
+											<p class="subhead-xxs anim-slide tr-delay-02">Android</p>
+										</li>
+										<li class="list__item red dot hidden-box">
+											<p class="subhead-xxs anim-slide tr-delay-03">C++</p>
+										</li>
+									</ul><!-- list end -->
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-r-margin-20 js-scrollanim">
+									<h6 class="subhead-xs anim-text-double-fill" data-text=""></h6>
+									<!-- list start -->
+									<ul class="list text-color-b0b0b0 padding-top-20">
+										<li class="list__item red dot hidden-box">
+											<p class="subhead-xxs anim-slide tr-delay-01">Computer Hardware</p>
+										</li>
+										<li class="list__item red dot hidden-box">
+											<p class="subhead-xxs anim-slide tr-delay-02">MySQL/PLSQL</p>
+										</li>
+										<li class="list__item red dot hidden-box">
+											<p class="subhead-xxs anim-slide tr-delay-03">HTML/CSS/Django</p>
+										</li>
+									</ul><!-- list end -->
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-r-margin-20 js-scrollanim">
+									<h6 class="subhead-xs anim-text-double-fill" data-text=""></h6>
+									<!-- list start -->
+									<ul class="list text-color-b0b0b0 padding-top-20">
+										<li class="list__item red dot hidden-box">
+											<p class="subhead-xxs anim-slide tr-delay-01">Linux</p>
+										</li>
+										<li class="list__item red dot hidden-box">
+											<p class="subhead-xxs anim-slide tr-delay-02">Machine Learning</p>
+										</li>
+										<li class="list__item red dot hidden-box">
+											<p class="subhead-xxs anim-slide tr-delay-03">Deep Learning</p>
+										</li>
+									</ul><!-- list end -->
+								</div>
+							</div><!-- column end -->
+						</div><!-- flex-container end -->
+
+		
+
+			<!-- latest news start -->
+			<section class="pos-rel section-bg-dark-1" >
+				<!-- pos-rel start -->
+				<div class="pos-rel flex-min-height-100vh">
+					<!-- container start -->
+					<div class="padding-top-bottom-120 container">
+						<!-- title start -->
+						<h2 class="headline-xl text-center hidden-box" >
+							<span class="anim-slide js-scrollanim">
+								My <span class="text-color-red">Education</span>
+							</span>
+						</h2><!-- title end -->
+
+						<!-- flex-container start -->
+						<div class="flex-container padding-top-60" >
+							<!-- blog-entry start -->
+							<article class="four-columns column-100-100 padding-top-30 js-scrollanim"> 
+								<div class="column-l-r-margin-10-999 hover-box pos-rel" id="education">
+									<a href="http://www.ipu.ac.in/" class="d-block hidden-box js-pointer-large js-animsition-link">
+										<img class="img-hover-scale" src="assets/images/posts/modern-design/photo-of-man-jumping-on-pavement-3329728-2.jpg" alt="Post">
+										<!-- bg-overlay -->
+										<div class="bg-overlay-black"></div>
+										<h3 class="headline-xxxs pos-abs pos-left-bottom list list_margin-1px hover-move-right">
+											<span class="list__item">
+												<span class="hidden-box d-inline-block">
+													<span class="anim-reveal">Guru Gobind Singh Indraprastha University, New Delhi</span>
+												</span>
+											</span>
+											<span class="list__item">
+												<span class="hidden-box d-inline-block">
+													<span class="subhead-xxs anim-reveal tr-delay-01">Bachelor of Technology in Computer Science</span>
+												</span>
+											</span>
+										</h3>
+									</a>
+									<div class="pos-abs pos-left-top d-flex flex-align-center">
+										<img class="border-radius-50perc margin-right-10 author-avatar anim-fade" src="assets/images/posts/modern-design/photo-of-man-jumping-on-pavement-3329728-2.jpg" alt="Author">
+										<div class="hidden-box">
+											<a href="#" class="subhead-xxs anim-slide js-pointer-small">CGPA: 8.25</a>
+										</div>
+									</div>
+								</div>
+							</article><!-- blog-entry end -->
+
+							<!-- blog-entry start -->
+							<article class="four-columns column-100-100 padding-top-30 js-scrollanim">
+								<div class="column-l-r-margin-10-999 hover-box pos-rel">
+									<a href="http://www.sbmpb.com/" class="d-block hidden-box js-pointer-large js-animsition-link">
+										<img class="img-hover-scale" src="assets/images/posts/modern-design/architectural-design-architecture-artistic-bright-1963478.jpg" alt="Post">
+										<!-- bg-overlay -->
+										<div class="bg-overlay-black"></div>
+										<h3 class="headline-xxxs pos-abs pos-left-bottom list list_margin-1px hover-move-right">
+											<span class="list__item">
+												<span class="hidden-box d-inline-block">
+													<span class="anim-reveal">Shri Sanatan Dharam Saraswati Bal Mandir, New Delhi</span>
+												</span>
+											</span>
+											<span class="list__item">
+												<span class="hidden-box d-inline-block">
+													<span class="subhead-xxs anim-reveal tr-delay-01">Senior Secondary Education from CBSE Board</span>
+												</span>
+											</span>
+										</h3>
+									</a>
+									<div class="pos-abs pos-left-top d-flex flex-align-center">
+										<img class="border-radius-50perc margin-right-10 author-avatar anim-fade" src="assets/images/posts/modern-design/architectural-design-architecture-artistic-bright-1963478.jpg" alt="Author">
+										<div class="hidden-box">
+											<a href="#" class="subhead-xxs anim-slide js-pointer-small"></a>
+										</div>
+									</div>
+								</div>
+							</article><!-- blog-entry end -->
+
+							<!-- blog-entry start -->
+							<article class="four-columns column-100-100 padding-top-30 js-scrollanim">
+								<div class="column-l-r-margin-10-999 hover-box pos-rel">
+									<a href="http://www.sbmpb.com/" class="d-block hidden-box js-pointer-large js-animsition-link">
+										<img class="img-hover-scale" src="assets/images/posts/modern-design/photo-of-man-jumping-on-pavement-3329728-2.jpg" alt="Post">
+										<!-- bg-overlay -->
+										<div class="bg-overlay-black"></div>
+										<h3 class="headline-xxxs pos-abs pos-left-bottom list list_margin-1px hover-move-right">
+											<span class="list__item">
+												<span class="hidden-box d-inline-block">
+													<span class="anim-reveal">Shri Sanatan Dharam Saraswati Bal Mandir, New Delhi</span>
+												</span>
+											</span>
+											<span class="list__item">
+												<span class="hidden-box d-inline-block">
+													<span class="subhead-xxs anim-reveal tr-delay-01">High Secondary Education from CBSE Board													</span>
+												</span>
+											</span>
+										</h3>
+									</a>
+									<div class="pos-abs pos-left-top d-flex flex-align-center">
+										<img class="border-radius-50perc margin-right-10 author-avatar anim-fade" src="assets/images/avatars/author/person-in-teal-ice-cream-print-tank-top-holds-ice-cream-886285.jpg" alt="Author">
+										<div class="hidden-box">
+											<a href="#" class="subhead-xxs anim-slide js-pointer-small"></a>
+										</div>
+									</div>
+								</div>
+							</article><!-- blog-entry end -->
+						</div><!-- flex-container end -->
+					</div><!-- container end -->
+				</div><!-- pos-rel end -->
+			</section><!-- latest news end -->
+
+
+			<!-- portfolio start -->
+			<section class="pos-rel section-bg-dark-2" >
+				<!-- pos-rel start -->
+				<div class="pos-rel padding-top-bottom-120">
+					<!-- container start -->
+					<div class="container">
+						<!-- title start -->
+						<h2 class="headline-xxxl text-center js-scrollanim">
+							<span class="anim-text-double-fill invert" data-text="Some">Some</span>
+							<span class="anim-text-double-fill tr-delay-02" data-text="Hobbies">Hobbies</span>
+						</h2><!-- title end -->
+
+						<!-- filter-buttons start -->
+						<div class="list list_row list_center list_margin-30px padding-top-90 js-filter-button-box js-scrollanim">
+							<button class="list__item js-filter-button anim-fade js-pointer-small js-filter-button-active" data-filter="*">
+								<!-- <span class="flip-btn" data-text="Everything">Everything</span> -->
+							</button>
+							<!-- <button class="list__item js-filter-button anim-fade tr-delay-01 js-pointer-small" data-filter=".marketing">
+								<span class="flip-btn" data-text="Marketing">Marketing</span>
+							</button>
+							<button class="list__item js-filter-button anim-fade tr-delay-02 js-pointer-small" data-filter=".photoshoot">
+								<span class="flip-btn" data-text="Photoshoot">Photoshoot</span>
+							</button>
+							<button class="list__item js-filter-button anim-fade tr-delay-03 js-pointer-small" data-filter=".branding">
+								<span class="flip-btn" data-text="Branding">Branding</span>
+							</button> -->
+						</div><!-- filter-buttons end -->
+
+						<!-- js-isotope-filter-grid-box start -->
+						<div class="js-isotope-filter-grid-box" id="hobbies">
+							<!-- empty grid -->
+							<div class="js-isotope-filter-grid-item empty-grid-1px-50-50-none"></div>
+							<div class="js-isotope-filter-grid-item empty-grid-100px-50-50-none"></div>
+
+							<!-- grid-item start -->
+							<div class="padding-top-60 grid-item-50-50-100 js-isotope-filter-grid-item photoshoot">
+								<a href="project_drone.html" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
+									<div class="anim-img-scale anim-img-scale_hover js-img-scale">
+										<img class="anim-img-scale__inner" src="assets/images/new/k.jpg" alt="project">
+									</div>
+									<!-- content start -->
+									<div class="margin-top-10 js-scrollanim">
+										<h3 class="subhead-m anim-text-double-fill" data-text="Badminton">Badminton</h3><br>
+										<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-02" data-text="Favourite Player: Kevin Sanjaya Sukamuljo">Favourite Player: Kevin Sanjaya Sukamuljo</span>
+									</div><!-- content end -->
+								</a>
+							</div><!-- grid-item end -->
+
+							<!-- grid-item start -->
+							<div class="padding-top-60 grid-item-50-50-100 js-isotope-filter-grid-item marketing">
+								<a href="project_drone.html" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
+									<div class="anim-img-scale anim-img-scale_hover js-img-scale">
+										<img class="anim-img-scale__inner" src="assets/images/new/sla.jpg" alt="project">
+									</div>
+									<!-- content start -->
+									<div class="margin-top-10 js-scrollanim">
+										<h3 class="subhead-m anim-text-double-fill" data-text="Playing Guitar">Playing Guitar</h3><br>
+										<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-02" data-text="Slash">Slash</span>
+									</div><!-- content end -->
+								</a>
+							</div><!-- grid-item end -->
+
+							<!-- grid-item start -->
+							<div class="padding-top-60 grid-item-50-50-100 js-isotope-filter-grid-item branding">
+								<a href="project_drone.html" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
+									<div class="anim-img-scale anim-img-scale_hover js-img-scale">
+										<img class="anim-img-scale__inner" src="assets/images/projects/controller/red-and-white-sony-dualshock-4-wireless-controller-1441931.jpg" alt="project">
+									</div>
+									<!-- content start -->
+									<div class="margin-top-10 js-scrollanim">
+										<h3 class="subhead-m anim-text-double-fill" data-text="Gaming">Gaming</h3><br>
+										<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-02" data-text="CS:GO">CS:GO</span>
+									</div><!-- content end -->
+								</a>
+							</div><!-- grid-item end -->
+
+							<!-- grid-item start -->
+							<div class="padding-top-60 grid-item-50-50-100 js-isotope-filter-grid-item photoshoot">
+								<a href="project_drone.html" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
+									<div class="anim-img-scale anim-img-scale_hover js-img-scale">
+										<img class="anim-img-scale__inner" src="assets/images/new/johnm.jpg" alt="project">
+									</div>
+									<!-- content start -->
+									<div class="margin-top-10 js-scrollanim">
+										<h3 class="subhead-m anim-text-double-fill" data-text="Music">Music</h3><br>
+										<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-02" data-text="Aerosmith, Led Zeppelin, Guns N' Roses, Coldplay, John Mayer, Post Malone, Illenium">Aerosmith, Led Zeppelin, Guns N' Roses, Coldplay, John Mayer, Post Malone, Illenium</span>
+									</div><!-- content end -->
+								</a>
+							</div><!-- grid-item end -->
+
+							<!-- grid-item start -->
+							<div class="padding-top-60 grid-item-50-50-100 js-isotope-filter-grid-item photoshoot">
+								<a href="project_drone.html" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
+									<div class="anim-img-scale anim-img-scale_hover js-img-scale">
+										<img class="anim-img-scale__inner" src="assets/images/projects/laptop/semi-opened-laptop-computer-turned-on-on-table-2047905.jpg" alt="project">
+									</div>
+									<!-- content start -->
+									<div class="margin-top-10 js-scrollanim">
+										<h3 class="subhead-m anim-text-double-fill" data-text="Coding">Coding</h3><br>
+										<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-02" data-text="Python, ML, Android, Deep Learning, Django">Python, ML, Android, Deep Learning, Django</span>
+									</div><!-- content end -->
+								</a>
+							</div><!-- grid-item end -->
+
+							<!-- grid-item start -->
+							<div class="padding-top-60 grid-item-50-50-100 js-isotope-filter-grid-item photoshoot">
+								<a href="project_drone.html" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
+									<div class="anim-img-scale anim-img-scale_hover js-img-scale">
+										<img class="anim-img-scale__inner" src="assets/images//new/tbbt.jpg" alt="project">
+									</div>
+									<!-- content start -->
+									<div class="margin-top-10 js-scrollanim">
+										<h3 class="subhead-m anim-text-double-fill" data-text="Watching Sitcoms">Watching Sitcoms</h3><br>
+										<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-02" data-text="Breaking Bad, The Wire, Californication, Big Bang Theory, House MD">Breaking Bad, The Wire, Californication, Big Bang Theory, House MD</span>
+									</div><!-- content end -->
+								</a>
+							</div><!-- grid-item end -->
+
+
+							
+						</div><!-- js-isotope-filter-grid-box end -->
+					</div><!-- container end -->
+				</div><!-- pos-rel end -->
+			</section><!-- portfolio end -->
+
+			
+
+			<!-- testimonials start -->
+			<section class="pos-rel section-bg-dark-2" >
+				<!-- pos-rel start -->
+				<div class="pos-rel flex-min-height-100vh">
+					<!-- padding-top-bottom-120 start -->
+					<div class="padding-top-bottom-120 width-100perc">
+						<!-- title start -->
+						<h2 class="headline-xl text-center js-scrollanim">
+							<span class="anim-text-double-fill invert" data-text="Some Projects">Some Projects</span>
+						</h2><!-- title end -->
+
+						<!-- padding-top-bottom-90 start -->
+						<div class="pos-rel padding-top-bottom-90" id="projects">
+							<!-- js-1-view-slider start -->
+							<div class="js-1-view-slider container small hidden-box">
+								<!-- swiper-wrapper start -->
+								<div class="swiper-wrapper js-slider-scroll-anim">
+									<!-- swiper-slide start -->
+									<div class="swiper-slide">
+										<!-- anim-img-scale start -->
+										<div class="anim-img-scale testimonials-author border-radius-50perc">
+											<img class="anim-img-scale__inner" src="assets/images/new/d.png" alt="author">
+										</div><!-- anim-img-scale end -->
+										<p class="quote margin-top-60 body-text-m anim-fade">Face recognition attendance system </p>
+										<div class="text-right margin-top-20">
+											<span class="subhead-m anim-text-double-fill tr-delay-01" data-text="Made on">Made on</span><br>
+											<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-03"  data-text="Deep Learning, OpenCV, Django, Android, DRF, MySQL">Deep Learning,OpenCV, Django, Android, DRF, MySQL</span>
+										</div>
+									</div><!-- swiper-slide end -->
+
+									<!-- swiper-slide start -->
+									<div class="swiper-slide">
+										<!-- anim-img-scale start -->
+										<div class="anim-img-scale testimonials-author border-radius-50perc">
+											<img class="anim-img-scale__inner" src="assets/images/new/c.png" alt="author">
+										</div><!-- anim-img-scale end -->
+										<p class="quote margin-top-60 body-text-m anim-fade">Locus Application-Locus is a remote attendance application developed to mark attendance when employees are remotely assigned for work.</p>
+										<div class="text-right margin-top-20">
+											<span class="subhead-m anim-text-double-fill tr-delay-01" data-text="Made on">Made on</span><br>
+											<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-03" data-text="Java, Android, Google Maps">Java, Android, Google Maps</span>
+										</div>
+									</div><!-- swiper-slide end -->
+
+									<!-- swiper-slide start -->
+									<div class="swiper-slide">
+										<!-- anim-img-scale start -->
+										<div class="anim-img-scale testimonials-author border-radius-50perc">
+											<img class="anim-img-scale__inner" src="assets/images/new/c.png" alt="author">
+										</div><!-- anim-img-scale end -->
+										<p class="quote margin-top-60 body-text-m anim-fade">Reminder Application for people to remind Medication timings using Android and Room Database.</p>
+										<div class="text-right margin-top-20">
+											<span class="subhead-m anim-text-double-fill tr-delay-01" data-text="Made on">Made on</span><br>
+											<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-03" data-text="Java, Android, ROOM Database">Java, Android, ROOM Database</span>
+										</div>
+									</div><!-- swiper-slide end -->
+
+									<!-- swiper-slide start -->
+									<div class="swiper-slide">
+										<!-- anim-img-scale start -->
+										<div class="anim-img-scale testimonials-author border-radius-50perc">
+											<img class="anim-img-scale__inner" src="assets/images/new/b.png" alt="author">
+										</div><!-- anim-img-scale end -->
+										<p class="quote margin-top-60 body-text-m anim-fade">Farmer Voice bot (Machine Learning)- Voice bot that helps farmers to get their queries solved regarding farming.</p>
+										<div class="text-right margin-top-20">
+											<span class="subhead-m anim-text-double-fill tr-delay-01" data-text="Made on">Made on</span><br>
+											<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-03" data-text="Python, ML, NLP">Python, ML, NLP</span>
+										</div>
+									</div><!-- swiper-slide end -->
+
+									<!-- swiper-slide start -->
+									<div class="swiper-slide">
+										<!-- anim-img-scale start -->
+										<div class="anim-img-scale testimonials-author border-radius-50perc">
+											<img class="anim-img-scale__inner" src="assets/images/new/a.png" alt="author">
+										</div><!-- anim-img-scale end -->
+										<p class="quote margin-top-60 body-text-m anim-fade">Python Banking web application</p>
+										<div class="text-right margin-top-20">
+											<span class="subhead-m anim-text-double-fill tr-delay-01" data-text="Made on">Made on</span><br>
+											<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-03" data-text="Python, Django, MySQL">Python, Django, MySQL</span>
+										</div>
+									</div><!-- swiper-slide end -->
+								</div><!-- swiper-wrapper end -->
+
+								<!-- swiper-button-prev start -->
+								<div class="swiper-button-prev-box">
+									<div class="swiper-button-prev"></div>
+								</div><!-- swiper-button-prev end -->
+								<!-- swiper-button-next start -->
+								<div class="swiper-button-next-box">
+									<div class="swiper-button-next"></div>
+								</div><!-- swiper-button-next end -->
+
+								<!-- swiper-pagination start -->
+								<div class="pagination-box">
+									<div class="swiper-pagination counter-pagination"></div>
+								</div><!-- swiper-pagination end -->
+							</div><!-- js-1-view-slider end -->
+						</div><!-- padding-top-bottom-90 end -->
+					</div><!-- padding-top-bottom-120 end -->
+				</div><!-- pos-rel end -->
+			</section><!-- testimonials end -->
+
+			
+		</main><!-- main end -->
+
+		<!-- footer start -->
+		<footer class="fixed-footer pos-rel bg-img-cover js-fixed-footer" style="background-image:url(assets/images/backgrounds/man-holding-videocamera-standing-in-studio-3379943.jpg)">
+			<!-- bg-overlay -->
+			<div class="bg-overlay-black"></div>
+			<!-- pos-rel start -->
+			<div class="pos-rel flex-min-height-100vh">
+				<!-- container start -->
+				<div class="container padding-top-bottom-120">
+					<!-- footer-logo start -->
+					<div class="footer-logo vertical footer-logo-desktop-hidden padding-bottom-90">
+						<img class="footer-logo__img" src="assets/images/logo/logo-white-vertical.png" alt="logo">
+					</div><!-- footer-logo end -->
+
+					<!-- flex-container start -->
+					<div class="flex-container flex-align-center">
+						<!-- column start -->
+						<div class="eight-columns">
+							<h4 class="column-l-r-margin-10 headline-l footer-title">
+								The <span class="text-color-red">Best<br>Developer</span> for<br>Your Work
+							</h4>
+						</div><!-- column end -->
+						<!-- column start -->
+						<div class="four-columns footer-nav-mobile-padding">
+							<ul class="column-l-r-margin-10 footer-nav-list js-footer-hover-box">
+								<li>
+									<a href="#home" class="footer-nav__btn js-pointer-small js-footer-hover-link">Home</a>
+								</li>
+								<li>
+									<a href="#about" class="footer-nav__btn js-pointer-small js-footer-hover-link">About</a>
+								</li>
+								<li>
+									<a href="#education" class="footer-nav__btn js-pointer-small js-footer-hover-link">Education</a>
+								</li>
+								<li>
+									<a href="#hobbies" class="footer-nav__btn js-pointer-small js-footer-hover-link">Hobbies</a>
+								</li>
+								<li>
+									<a href="#projects" class="footer-nav__btn js-pointer-small js-footer-hover-link">Projects</a>
+								</li>
+								<li>
+									<a href="contact.html" class="footer-nav__btn js-pointer-small js-footer-hover-link">Contact</a>
+								</li>
+							</ul>
+						</div><!-- column end -->
+					</div><!-- flex-container end -->
+
+					<!-- flex-container start -->
+					<div class="flex-container flex-justify-center padding-top-30">
+						<!-- column start -->
+						<div class="four-columns column-50-100 padding-top-60 footer-email">
+							<div class="column-l-r-margin-10">
+								<div class="headline-xxxxs">Email</div>
+								<div class="margin-top-10">
+									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">sharma.yash520@gmail.com</a><br>
+
+								</div>
+							</div>
+						</div><!-- column end -->
+						<!-- column start -->
+						<div class="four-columns column-50-100 padding-top-60 footer-address">
+							<div class="column-l-r-margin-10">
+								<div class="headline-xxxxs">Address</div>
+								<div class="margin-top-10">
+									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">
+										New Delhi, India<br>
+									</a>
+								</div>
+							</div>
+						</div><!-- column end -->
+						<!-- column start -->
+						<div class="four-columns column-50-100 padding-top-60 footer-phone">
+							<div class="column-l-r-margin-10">
+								<div class="headline-xxxxs">Phone</div>
+								<div class="margin-top-10">
+									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">+91-9818580167</a>
+								</div>
+							</div>
+						</div><!-- column end -->
+					</div><!-- flex-container end -->
+
+					<!-- footer-social start -->
+					<ul class="footer-social-desktop-hidden list list_center padding-top-90">
+						<li class="list__item">
+							<a href="https://github.com/syash5" class="flip-btn js-pointer-small" data-text="Github">Github</a>
+						</li>
+						<li class="list__item">
+							<a href="#" class="flip-btn js-pointer-small" data-text="Dribbble">Dribbble</a>
+						</li>
+						<li class="list__item">
+							<a href="#" class="flip-btn js-pointer-small" data-text="Instagram">Instagram</a>
+						</li>
+						<li class="list__item">
+							<a href="#" class="flip-btn js-pointer-small" data-text="Youtube">Youtube</a>
+						</li>
+						<li class="list__item">
+							<a href="#" class="flip-btn js-pointer-small" data-text="Behance">Behance</a>
+						</li>
+						<li class="list__item">
+							<a href="#" class="flip-btn js-pointer-small" data-text="Twitter">Twitter</a>
+						</li>
+					</ul><!-- footer-social end -->
+
+					<!-- footer-copyright start -->
+					<div class="footer-copyright text-center pos-abs pos-bottom-center">
+						<p class="copyright-style">
+							&copy; Copyright 2020 YASH.
+						</p>
+					</div><!-- footer-copyright end -->
+				</div><!-- container end -->
+			</div><!-- pos-rel end -->
+		</footer><!-- footer end -->
+
+		<!-- scripts -->
+		<script src="assets/js/plugins.js"></script>
+		<script src="assets/js/footer-reveal.js"></script>
+		<script src="assets/js/typewriter.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/footer-reveal_init.js"></script>
+		<script src="assets/js/typewriter_init.js"></script>
+	</body>
+
+</html>
